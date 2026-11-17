@@ -1,5 +1,5 @@
 // File generated from android/app/google-services.json for Firebase project
-// 'inzira-498621'. Equivalent to lutterfire configure --platforms=android.
+// 'inzira-498621'. Equivalent to `flutterfire configure --platforms=android`.
 // ignore_for_file: type=lint
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
