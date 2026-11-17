@@ -6,7 +6,7 @@ This folder contains the Firebase rules, Firestore index, and automated emulator
 
 - **Authentication:** Email/Password accounts and verification.
 - **Cloud Firestore:** user profiles at `users/{uid}` and incident records at `incidents/{incidentId}`.
-- **Cloud Storage:** optional photos at `incident_photos/{uid}/{fileName}`.
+- **Cloud Storage (not used by the current app):** `storage.rules` describes photos at `incident_photos/{uid}/{fileName}`. Because Firebase Storage needs the Blaze plan, the app now stores photos in Cloudflare R2 through `cloudflare/photo-worker.js`, which enforces the same owner/staff, verified-ALU, image-type and 8 MB rules. These rules are kept for a possible move back to Firebase Storage.
 - **Local Emulator Suite:** isolated Auth, Firestore, and Storage testing without writing to production data.
 
 ## Data and access model
