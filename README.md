@@ -277,7 +277,7 @@ Coverage includes input validation, incident model mapping, status progression, 
 
 ### Firebase Emulator Suite rules tests
 
-Requirements: Node.js 22+, Java 17+, Firebase CLI.
+Requirements: Node.js 22+, **Java 21+** (the Firebase CLI's emulators no longer run on Java 17), Firebase CLI.
 
 ```powershell
 cd firebase/rules-tests

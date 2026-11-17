@@ -104,7 +104,8 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
+          # firebase-tools requires Java 21+ for the emulators.
+          java-version: '21'
 
       - name: Install rule-test dependencies
         working-directory: firebase/rules-tests
